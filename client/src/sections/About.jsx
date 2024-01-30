@@ -1,9 +1,47 @@
 const About = () => {
   return (
-    <div>
-      About
-    </div>
-  )
-}
+    <>
+      <section className="bg-black flex w-full">
+        <div className="flex min-h-screen items-center w-1/2 justify-center font-bold text-white">
+          <div className=" text-left mx-12 space-y-12">
+            <div className="text-5xl text-left font-bold">
+              We offer:{" "}<br />
+              <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
+                <span className="animate-word col-span-full row-span-full">
+                  Graphic Design
+                </span>
+                <span className="animate-word-delay-1 col-span-full row-span-full">
+                  Branding & Signages
+                </span>
+                <span className="animate-word-delay-2 col-span-full row-span-full">
+                  Printing
+                </span>
+                <span className="animate-word-delay-3 col-span-full row-span-full">
+                  Web Development
+                </span>
+                <span className="animate-word-delay-4 col-span-full row-span-full">
+                  Digital Marketing
+                </span>
+              </div>
+            </div>
 
-export default About
+            <div>
+              <p className="font-light leading-7 text-justify" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam consequatur deserunt sint ipsum saepe hic, perferendis dolore, odit quos laudantium, repudiandae assumenda beatae molestiae voluptatum quo accusamus doloremque accusantium!
+              Ad repellat consequatur reiciendis commodi repudiandae fugit eius provident labore numquam perspiciatis, optio amet accusantium sequi ipsam maxime nulla velit unde! Accusantium earum, dolorum nihil libero iure praesentium corporis distinctio.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/2 flex items-center justify-center my-auto">
+          <img
+            src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183651/IMG_20230824_183146_gfaqgr.jpg"
+            alt="Boldify Image"
+            width={270}
+          />
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default About;

@@ -12,7 +12,7 @@ const BasicParticles = () => {
   return (
     <points ref={points}>
       <sphereGeometry args={[1, 48, 48]} />
-      <pointsMaterial color="#000" size={0.015} sizeAttenuation />
+      <pointsMaterial color="#000" size={0.018} sizeAttenuation />
     </points>
   );
 };
@@ -20,11 +20,11 @@ const BasicParticles = () => {
 const CanvasArea = () => {
   return (
     <>
-      <div style={{ width: "50vw", height: "75vh" }}>
+      <div className="flex justify-center items-center" style={{ width: "50%", height: "75vh" }}>
         <Canvas camera={{ position: [1.5, 1.5, 1.5] }}>
           <ambientLight intensity={0.5} />
           <BasicParticles />
-          <OrbitControls autoRotate />
+          <OrbitControls enableZoom={false} enablePan={false} autoRotate />
         </Canvas>
       </div>
     </>
