@@ -1,4 +1,5 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-white">
@@ -8,7 +9,7 @@ const Footer = () => {
               <div className="flex justify-center text-[#aC2333] sm:justify-start">
                 <img
                   src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183635/Boldify_Creatives_Logo-01_lqtagj.png"
-                  width={180}
+                  width={150}
                   alt=""
                 />
               </div>
@@ -278,7 +279,7 @@ const Footer = () => {
               </p>
 
               <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                &copy; 2022 Company Name
+                &copy; {currentYear} Boldify Creatives
               </p>
             </div>
           </div>
