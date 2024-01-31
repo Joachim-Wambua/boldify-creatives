@@ -83,3 +83,16 @@
   animation: word 7s infinite;
   animation-delay: -5.6s;
 }
+
+
+.client-logo {
+  filter: grayscale(100%);
+  opacity: 63%;
+  transition: filter 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  opacity: 100%;
+}
+
