@@ -9,7 +9,7 @@ const Header = () => {
         <div className="header-content flex-1 w-1/2 py-6">
           <h1 className="text-8xl font-extrabold">We Are<br/> <span>Boldify</span></h1  >
         </div>
-        <div className="header-image w-1/2 ">
+        <div className="header-image flex justify-center items-center w-1/2 ">
           <CanvasArea />
         </div>
       </div>
