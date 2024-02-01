@@ -3,6 +3,7 @@ import About from "./sections/About";
 import Services from "./sections/Services";
 import Footer from "./sections/Footer";
 import Clients from "./sections/Clients";
+import Team from "./sections/Team";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <About />
         <Services />
+        <Team />
         <Clients />
         <Footer />
       </div>
