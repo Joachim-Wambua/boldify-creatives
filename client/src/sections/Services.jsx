@@ -82,7 +82,7 @@ const Services = () => {
                 <i className="fa-solid fa-bolt text-3xl text-gray-900"></i>
               </div>
               <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Performance Metrics
+                Data Analytics
               </h3>
               <p className="mt-5 text-base text-gray-600">
                 Monitor and measure your performance with comprehensive metrics.
