@@ -1,5 +1,3 @@
-import React from "react";
-
 const Team = () => {
   return (
     <>
@@ -54,7 +52,7 @@ const Team = () => {
               />
             </div>
             <div className="flex flex-col sm:text-center">
-              <p className="text-lg font-bold">Lamex Ochieng'</p>
+              <p className="text-lg font-bold">Lamex Ochieng</p>
               <p className="mb-5 text-xs text-gray-800">Design Team Lead</p>
               <div className="flex items-center space-x-3 sm:justify-center">
                 <a
