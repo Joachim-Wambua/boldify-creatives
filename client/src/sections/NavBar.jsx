@@ -1,6 +1,6 @@
 // Navbar.js
 "use client"; // for nextjs 13.4 users
-import React, { useState } from "react";
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
