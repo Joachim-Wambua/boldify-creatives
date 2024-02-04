@@ -96,3 +96,25 @@
   opacity: 100%;
 }
 
+/* NavBar & Header Styles */
+.nav-links:hover {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.nav-link-full:hover {
+  color: #757575;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 2.7px;
+  font-style: italic;
+}
+
+.about-services {
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 2.7px;
+  font-style: italic;
+}

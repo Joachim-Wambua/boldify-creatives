@@ -7,7 +7,7 @@ const Header = () => {
     <header className="h-[100vh]" >
       <Navbar />
       <motion.div
-        className="header-container flex flex-row w-full items-center justify-center"
+        className="header-container flex flex-row w-full items-center xs:flex-col justify-center"
         initial={{
           opacity: 0,
           // if odd index card,slide from right instead of left
@@ -22,14 +22,14 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
-        <div className="header-content flex-1 w-1/2 py-6">
-          <h1 className="text-8xl font-extrabold">
+        <div className="header-content flex-1 w-1/2 xs:w-full py-6">
+          <h1 className="text-9xl font-black ">
             We Are
             <br />
-            <span>Boldify</span>
+            <span className="brand-name" >Boldify</span>
           </h1>
         </div>
-        <div className="header-image flex justify-center items-center w-1/2 ">
+        <div className="header-image flex justify-center xs:w-full items-center w-1/2 ">
           <CanvasArea />
         </div>
       </motion.div>

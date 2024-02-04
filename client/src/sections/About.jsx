@@ -24,7 +24,7 @@ const About = () => {
             <div className=" text-left mx-12 space-y-12">
               <div className="text-5xl text-left font-bold">
                 We offer: <br />
-                <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
+                <div className="about-services relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
                   <span className="animate-word col-span-full row-span-full">
                     Graphic Design
                   </span>
