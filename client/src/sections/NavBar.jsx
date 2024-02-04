@@ -131,6 +131,9 @@ const Navbar = () => {
                     variants={listVariants}
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.95 }}
+                    initial="closed"
+                    animate={isMenuOpen ? "open" : "closed"}
+                    exit="closed"
                   >
                     <a
                       href={item.href}
