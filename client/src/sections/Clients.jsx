@@ -1,7 +1,24 @@
+import { motion } from "framer-motion";
+
 const Clients = () => {
   return (
     <>
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
+      <motion.div
+        className="bg-white py-6 sm:py-8 lg:py-12"
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1.8, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex flex-col items-center md:mb-8 lg:justify-between">
             <h2 className="mb-2 text-center text-2xl font-bold text-gray-800 lg:mb-0 lg:text-3xl">
@@ -60,7 +77,7 @@ const Clients = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

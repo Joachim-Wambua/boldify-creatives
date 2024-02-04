@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="h-[100vh]" >
+    <header className="h-[100vh] flex justify-center" >
       <Navbar />
       <motion.div
         className="header-container flex flex-row w-full items-center xs:flex-col justify-center"
@@ -17,7 +17,7 @@ const Header = () => {
           opacity: 1,
           x: 0, // Slide in to its original position
           transition: {
-            duration: 1, // Animation duration
+            duration: 1.8, // Animation duration
           },
         }}
         viewport={{ once: true }}
@@ -33,7 +33,6 @@ const Header = () => {
           <CanvasArea />
         </div>
       </motion.div>
-      ;
     </header>
   );
 };

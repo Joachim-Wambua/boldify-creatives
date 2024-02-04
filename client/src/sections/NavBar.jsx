@@ -54,8 +54,23 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sm:px-8 px-4 py-8 z-10 w-full">
-        <nav className="flex justify-between items-center max-container">
+      <header className="fixed shadow bg-white sm:px-8 px-4 py-8 z-10 w-full">
+        <motion.nav
+          className="flex justify-between items-center max-container"
+          initial={{
+            opacity: 0,
+            // if odd index card,slide from right instead of left
+            y: -50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0, // Slide in to its original position
+            transition: {
+              duration: 1.8, // Animation duration
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <a href="/" className="text-3xl font-bold">
             <img
               src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183635/Boldify_Creatives_Logo-01_lqtagj.png"
@@ -88,7 +103,7 @@ const Navbar = () => {
           >
             <RxHamburgerMenu className="text-4xl" />
           </div>
-        </nav>
+        </motion.nav>
       </header>
       <AnimatePresence>
         {isMenuOpen && (

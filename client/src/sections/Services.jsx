@@ -1,8 +1,25 @@
+import { motion } from "framer-motion";
+
 const Services = () => {
   return (
     <>
       <section id="services" className="py-8 bg-white sm:py-10 lg:py-16">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <motion.div
+          className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
+          initial={{
+            opacity: 0,
+            // if odd index card,slide from right instead of left
+            x: -50,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0, // Slide in to its original position
+            transition: {
+              duration: 1.8, // Animation duration
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <div className="text-center">
             <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
               Our Services{" "}
@@ -90,7 +107,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

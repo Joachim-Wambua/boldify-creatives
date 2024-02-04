@@ -1,7 +1,23 @@
+import { motion } from "framer-motion";
+
 const Team = () => {
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <motion.div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: {
+            duration: 1.8, // Animation duration
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
           <p className="inline-block px-3 py-px mb-4 text-lg font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Meet The Team
@@ -137,7 +153,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

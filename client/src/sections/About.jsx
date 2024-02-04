@@ -15,7 +15,7 @@ const About = () => {
             opacity: 1,
             x: 0, // Slide in to its original position
             transition: {
-              duration: 1, // Animation duration
+              duration: 1.8, // Animation duration
             },
           }}
           viewport={{ once: true }}

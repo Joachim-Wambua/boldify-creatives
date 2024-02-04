@@ -1,9 +1,26 @@
+import { motion } from "framer-motion";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-white">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+        <motion.div
+          className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24"
+          initial={{
+            opacity: 0,
+            // if odd index card,slide from right instead of left
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0, // Slide in to its original position
+            transition: {
+              duration: 1.8, // Animation duration
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center text-[#aC2333] sm:justify-start">
@@ -283,7 +300,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </footer>
     </>
   );
