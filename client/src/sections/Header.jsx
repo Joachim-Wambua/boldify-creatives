@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="h-[100vh] flex justify-center" >
+    <header className="h-[100vh] flex justify-center">
       <Navbar />
       <motion.div
-        className="header-container flex flex-row w-full items-center xs:flex-col justify-center"
+        className="header-container flex w-full items-center justify-center"
         initial={{
           opacity: 0,
           // if odd index card,slide from right instead of left
@@ -23,10 +23,10 @@ const Header = () => {
         viewport={{ once: true }}
       >
         <div className="header-content flex-1 w-1/2 xs:w-full py-6">
-          <h1 className="text-9xl font-black ">
+          <h1 className="xl:text-9xl font-black lg:text-8xl md:text-8xl sm:text-7xl ">
             We Are
             <br />
-            <span className="brand-name" >Boldify</span>
+            <span className="brand-name">Boldify</span>
           </h1>
         </div>
         <div className="header-image flex justify-center xs:w-full items-center w-1/2 ">

@@ -20,7 +20,7 @@ const BasicParticles = () => {
 const CanvasArea = () => {
   return (
     <>
-      <div className="flex justify-center items-center" style={{ width: "50%", height: "75vh" }}>
+      <div className="canvas-three flex justify-center items-center">
         <Canvas camera={{ position: [1.5, 1.5, 1.5] }}>
           <ambientLight intensity={0.5} />
           <BasicParticles />
