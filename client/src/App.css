@@ -135,8 +135,20 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* CSS rules for medium devices */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content {
+    width: 100% !important;
+  }
+
+  .about-image {
+    width: 100% !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */

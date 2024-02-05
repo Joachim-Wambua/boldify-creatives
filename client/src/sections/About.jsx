@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <>
-      <section className="bg-black">
+      <section className="bg-black w-full">
         <motion.div
-          className="flex w-full"
+          className="about-section flex w-full"
           initial={{
             opacity: 0,
             // if odd index card,slide from right instead of left
@@ -20,9 +20,9 @@ const About = () => {
           }}
           viewport={{ once: true }}
         >
-          <div className="flex min-h-screen items-center w-1/2 justify-center font-bold text-white">
+          <div className="about-content flex min-h-screen items-center w-1/2 justify-center font-bold text-white">
             <div className=" text-left mx-12 space-y-12">
-              <div className="text-5xl text-left font-bold">
+              <div className="text-4xl text-left font-bold">
                 We offer: <br />
                 <div className="about-services relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
                   <span className="animate-word col-span-full row-span-full">
@@ -58,7 +58,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="w-1/2 flex items-center justify-center my-auto">
+          <div className="about-image w-1/2 xs:w-full mb-8 flex items-center justify-center my-auto">
             <img
               src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183651/IMG_20230824_183146_gfaqgr.jpg"
               alt="Boldify Image"

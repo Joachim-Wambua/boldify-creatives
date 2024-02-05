@@ -19,7 +19,7 @@ const Team = () => {
         viewport={{ once: true }}
       >
         <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-          <p className="inline-block px-3 py-px mb-4 text-lg font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+          <p className="inline-block px-3 py-px mb-4 text-4xl font-bold  text-slate-800 rounded-full bg-teal-accent-400">
             Meet The Team
           </p>
           <p className="text-base text-gray-700 md:text-lg">
