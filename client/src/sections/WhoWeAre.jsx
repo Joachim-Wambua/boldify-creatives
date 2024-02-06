@@ -1,11 +1,9 @@
-import React from "react";
-
 const WhoWeAre = () => {
   return (
     <>
-      <section className="my-8">
+      <section className="my-32">
         <div className="container mx-auto text-center lg:text-left xl:px-32">
-          <div className="flex grid items-center lg:grid-cols-2">
+          <div className="flex grid items-center justify-center lg:grid-cols-2">
             <div className="mb-12 lg:mb-0">
               <div className="relative z-[1] block rounded-lg bg-[#C2C2C2] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[#F2F2F2] dark:shadow-black/20 md:px-12 lg:-mr-14">
                 <h2 className="mb-8 text-3xl font-bold">Who We Are </h2>
@@ -82,7 +80,7 @@ const WhoWeAre = () => {
               </div>
             </div>
 
-            <div className="flex h-full bg-cover  " >
+            <div className="flex h-[80vh] w-[30vw] xs:w-[63vw] items-center " >
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/ecommerce/vertical/117.jpg" 
                 className="w-full rounded-lg shadow-lg dark:shadow-black/20"
