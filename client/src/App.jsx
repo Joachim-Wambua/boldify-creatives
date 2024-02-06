@@ -6,6 +6,7 @@ import Clients from "./sections/Clients";
 import Team from "./sections/Team";
 
 import "./App.css";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Services />
         <Team />
+        <Projects />
         <Clients />
         <Footer />
       </div>

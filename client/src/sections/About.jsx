@@ -51,8 +51,7 @@ const About = () => {
                   molestiae voluptatum quo accusamus doloremque accusantium! Ad
                   repellat consequatur reiciendis commodi repudiandae fugit eius
                   provident labore numquam perspiciatis, optio amet accusantium
-                  sequi ipsam maxime nulla velit unde! Accusantium earum,
-                  dolorum nihil libero iure praesentium corporis distinctio.
+                  sequi ipsam maxime nulla velit unde! Accusantium earum.
                 </p>
               </div>
             </div>
