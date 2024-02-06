@@ -8,8 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
     { href: "#expertise", label: "Expertise" },
     { href: "#portfolio", label: "Portfolio" },
     { href: "#contact", label: "Contact" },
