@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <>
-      <section className="bg-black w-full">
+      <section className="bg-white dark:bg-gray-900 w-full">
         <motion.div
           className="about-section flex w-full"
           initial={{

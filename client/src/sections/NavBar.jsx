@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
+import Button from "../components/Button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -91,9 +92,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex gap-2 text-lg leading-normal font-medium max-lg:hidden wide:mr-24">
-            <button className="before:ease relative h-12 w-40 overflow-hidden border border-black shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-gray-900 before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180">
-              <span className="relative z-10">Book Call</span>
-            </button>
+            <Button content="Book Call" />
           </div>
           <div
             className="hidden max-lg:block cursor-pointer"
