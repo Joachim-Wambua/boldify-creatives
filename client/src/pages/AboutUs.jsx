@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
       {/* TODO: Add Header  */}
-      <DynamicHeader />
+      <DynamicHeader title="About Us" />
       <WhoWeAre />
       <CoreValues />
       <CallToAction />

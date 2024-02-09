@@ -1,6 +1,6 @@
 import Navbar from "../sections/NavBar";
 
-const DynamicHeader = () => {
+const DynamicHeader = ({ title }) => {
   return (
     <>
       <Navbar />
@@ -11,7 +11,7 @@ const DynamicHeader = () => {
             <div className="flex h-full items-center justify-center">
               <div className="max-w-[800px] px-6 py-6 text-center text-white md:py-0 md:px-12">
                 <h2 className="mb-12 text-5xl font-bold leading-tight tracking-tight md:text-6xl xl:text-7xl">
-                  About Us
+                  {title}
                 </h2>
               </div>
             </div>

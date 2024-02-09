@@ -13,7 +13,7 @@ const Navbar = () => {
     { href: "/about", label: "About" },
     { href: "#expertise", label: "Expertise" },
     { href: "#portfolio", label: "Portfolio" },
-    { href: "#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const navVariants = {
