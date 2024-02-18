@@ -97,6 +97,10 @@
 
 /* NavBar & Header Styles */
 
+.menu-logo {
+  width: 120px;
+}
+
 .nav-links:hover {
   font-family: "Playfair Display", sans-serif;
   font-weight: 600;
@@ -209,7 +213,6 @@ input:checked + label .project-description {
   transform: translateY(0) !important;
 }
 
-
 .project-card[for="p1"] {
   background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1707235976/9550722_221_f9dquv.jpg");
 }
@@ -232,6 +235,79 @@ input:checked + label .project-description {
 
 .project-card[for="p6"] {
   background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1707235988/35428959_stationery_mavec_18_v9cex7.jpg");
+}
+
+/* Image Slides */
+input[type="radio"] {
+  display: none;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 20px;
+}
+
+.card {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #image-3,
+#item-2:checked ~ .cards #image-1,
+#item-3:checked ~ .cards #image-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #image-2,
+#item-2:checked ~ .cards #image-3,
+#item-3:checked ~ .cards #image-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #image-1,
+#item-2:checked ~ .cards #image-2,
+#item-3:checked ~ .cards #image-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#item-1:checked ~ .cards #image-1 img,
+#item-2:checked ~ .cards #image-2 img,
+#item-3:checked ~ .cards #image-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
 /* Extra small devices (phones, 576px and down) */

@@ -1,11 +1,12 @@
-import DynamicHeader from "../components/DynamicHeader";
 import Footer from "../sections/Footer";
 import ContactForm from "../sections/ContactForm";
+import Navbar from "../sections/NavBar";
 
 const ContactUs = () => {
   return (
     <>
-    <ContactForm />
+      <Navbar />
+      <ContactForm />
       <Footer />
     </>
   );

@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900 w-full">
+      <section className="bg-gray-900 dark:bg-gray-900 w-full">
         <motion.div
-          className="about-section flex w-full"
+          className="about-section flex w-full justify-center "
           initial={{
             opacity: 0,
             // if odd index card,slide from right instead of left
@@ -57,12 +57,35 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about-image w-1/2 xs:w-full mb-8 flex items-center justify-center my-auto">
-            <img
-              src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183651/IMG_20230824_183146_gfaqgr.jpg"
-              alt="Boldify Image"
-              width={270}
-            />
+          <div className="about-image w-1/2 xs:w-full mb-8 flex items-center justify-center">
+            <div className="container">
+              <input type="radio" name="slider" id="item-1" checked />
+              <input type="radio" name="slider" id="item-2" />
+              <input type="radio" name="slider" id="item-3" />
+              <div className="cards">
+                <label className="card" htmlFor="item-1" id="image-1">
+                  <img
+                    src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708285741/bodify1_fc8mga.png"
+                    alt="song"
+                    height={180}
+                  />
+                </label>
+                <label className="card" htmlFor="item-2" id="image-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                    alt="song"
+                    width={250}
+                  />
+                </label>
+                <label className="card" htmlFor="item-3" id="image-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                    alt="song"
+                    width={250}
+                  />
+                </label>
+              </div>
+            </div>
           </div>
         </motion.div>
       </section>

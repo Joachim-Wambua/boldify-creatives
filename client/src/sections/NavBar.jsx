@@ -74,6 +74,7 @@ const Navbar = () => {
         >
           <a href="/" className="text-3xl font-bold">
             <img
+            className="menu-logo"
               src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183635/Boldify_Creatives_Logo-01_lqtagj.png"
               width={120}
               alt="Logo"
