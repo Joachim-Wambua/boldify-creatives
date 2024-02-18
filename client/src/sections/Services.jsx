@@ -56,7 +56,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165734/printer_ehxmk9.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708292797/output-onlinegiftools_ttlqko.gif"
                   alt="printing"
                 />
               </div>

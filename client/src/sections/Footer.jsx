@@ -25,8 +25,8 @@ const Footer = () => {
             <div>
               <div className="flex justify-center text-[#aC2333] sm:justify-start">
                 <img
+                  className="footer-logo"
                   src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183635/Boldify_Creatives_Logo-01_lqtagj.png"
-                  width={150}
                   alt=""
                 />
               </div>

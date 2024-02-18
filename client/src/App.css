@@ -86,13 +86,14 @@
 
 .client-logo {
   filter: grayscale(100%);
+  max-width: 153px;
   opacity: 63%;
-  transition: filter 0.3s ease-in-out;
 }
 
 .client-logo:hover {
   filter: grayscale(0%);
   opacity: 100%;
+  transition: filter 0.3s ease-in-out;
 }
 
 /* NavBar & Header Styles */
@@ -237,6 +238,11 @@ input:checked + label .project-description {
   background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1707235988/35428959_stationery_mavec_18_v9cex7.jpg");
 }
 
+/* Footer */
+.footer-logo {
+  width: 120px;
+}
+
 /* Image Slides */
 input[type="radio"] {
   display: none;
@@ -270,8 +276,6 @@ input[type="radio"] {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 img {
   width: 100%;

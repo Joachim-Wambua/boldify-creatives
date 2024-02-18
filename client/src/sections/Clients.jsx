@@ -30,7 +30,6 @@ const Clients = () => {
             <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
               <img
                 className="client-logo"
-                width={240}
                 src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706704176/pngegg_lngzxq.png"
                 alt=""
               />
