@@ -32,7 +32,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165069/vector_xlxdov.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347209/output-onlinegiftools_3_alrrkt.gif"
                   alt="graphic-design-icon"
                 />
               </div>
@@ -44,7 +44,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165739/brand-advertising_mncdz2.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347206/output-onlinegiftools_2_vi56yg.gif"
                   alt="branding"
                 />
               </div>
@@ -68,7 +68,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165732/html_mijvc6.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347204/output-onlinegiftools_1_r1aluo.gif"
                   alt="web-dev"
                 />
               </div>
@@ -80,7 +80,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165737/promotion_gfp5gl.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347210/output-onlinegiftools_4_j8vbpw.gif"
                   alt="digital-marketing"
                 />
               </div>
@@ -92,7 +92,7 @@ const Services = () => {
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
               <div className="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
                 <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1707165737/stats_ld0f08.gif"
+                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347213/output-onlinegiftools_5_crirgp.gif"
                   alt="data-analytics"
                 />
               </div>
