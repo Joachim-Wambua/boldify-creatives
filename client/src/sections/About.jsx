@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % 3);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section className="bg-gray-900 dark:bg-gray-900 w-full">
@@ -59,9 +69,9 @@ const About = () => {
 
           <div className="about-image w-1/2 xs:w-full mb-8 flex items-center justify-center">
             <div className="container">
-              <input type="radio" name="slider" id="item-1" checked />
-              <input type="radio" name="slider" id="item-2" />
-              <input type="radio" name="slider" id="item-3" />
+              <input type="radio" name="slider" id="item-1" checked={currentSlide === 0} />
+              <input type="radio" name="slider" id="item-2"  checked={currentSlide === 1} />
+              <input type="radio" name="slider" id="item-3"  checked={currentSlide === 2} />
               <div className="cards">
                 <label className="card" htmlFor="item-1" id="image-1">
                   <img
