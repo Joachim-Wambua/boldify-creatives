@@ -19,24 +19,6 @@ const CoreValues = () => {
               />
               <a href="#!">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,0%,0.4)] bg-fixed">
-                  <div className="flex h-full items-center justify-center">
-                    <div className="px-6 py-12 text-center text-white md:px-12">
-                      <h3 className="mb-6 text-2xl font-bold uppercase">
-                        The future is
-                        <u className="text-[hsl(210,12%,80%)]"> now</u>
-                      </h3>
-                      <p className="text-[hsl(210,12%,80%)]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum quia laboriosam error consequuntur fugit,
-                        doloribus rerum, iure nesciunt amet quidem veniam
-                        cupiditate hic fugiat dolore aperiam quisquam libero
-                        earum quibusdam?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative overflow-hidden bg-cover bg-no-repeat">
-                  <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                 </div>
               </a>
             </div>
@@ -45,7 +27,7 @@ const CoreValues = () => {
           <div className="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
             <div className="mb-12 flex">
               <div className="shrink-0">
-                <div className="rounded-md bg-[hsl(204,30%,20%)] p-4 shadow-lg dark:bg-[hsl(207,8%,23%)]">
+                <div className="rounded-md bg-gray-900 p-4 shadow-lg dark:bg-gray-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -74,7 +56,7 @@ const CoreValues = () => {
 
             <div className="mb-12 flex">
               <div className="shrink-0">
-                <div className="rounded-md bg-[hsl(204,30%,20%)] p-4 shadow-lg dark:bg-[hsl(207,8%,23%)]">
+                <div className="rounded-md bg-gray-900 p-4 shadow-lg dark:bg-gray-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -103,7 +85,7 @@ const CoreValues = () => {
 
             <div className="mb-12 flex">
               <div className="shrink-0">
-                <div className="rounded-md bg-[hsl(204,30%,20%)] p-4 shadow-lg dark:bg-[hsl(207,8%,23%)]">
+                <div className="rounded-md bg-gray-900 p-4 shadow-lg dark:bg-gray-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -132,7 +114,7 @@ const CoreValues = () => {
 
             <div className="flex">
               <div className="shrink-0">
-                <div className="rounded-md bg-[hsl(204,30%,20%)] p-4 shadow-lg dark:bg-[hsl(207,8%,23%)]">
+                <div className="rounded-md bg-gray-900 p-4 shadow-lg dark:bg-gray-900">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -11,8 +11,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "#expertise", label: "Expertise" },
-    { href: "#portfolio", label: "Portfolio" },
+    { href: "/expertise", label: "Expertise" },
+    { href: "/portfolio", label: "Portfolio" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -74,7 +74,7 @@ const Navbar = () => {
         >
           <a href="/" className="text-3xl font-bold">
             <img
-            className="menu-logo"
+              className="menu-logo"
               src="https://res.cloudinary.com/dfdn7sxwi/image/upload/v1706183635/Boldify_Creatives_Logo-01_lqtagj.png"
               width={120}
               alt="Logo"

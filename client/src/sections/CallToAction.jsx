@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import InvertedButton from "../components/InvertedButton";
 
 const CallToAction = () => {

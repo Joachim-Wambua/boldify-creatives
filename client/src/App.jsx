@@ -11,6 +11,7 @@ import "./App.css";
 import Projects from "./sections/Projects";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Expertise from "./pages/Expertise";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
-          {/* <Route path="/services" element={<Services />} /> */}
+          <Route path="/expertise" element={<Expertise />} />
           {/* <Route path="/clients" element={<Clients />} /> */}
           <Route path="/contact" element={<ContactUs />} />
         </Routes>

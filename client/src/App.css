@@ -215,11 +215,11 @@ input:checked + label .project-description {
 }
 
 .project-card[for="p1"] {
-  background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1707235976/9550722_221_f9dquv.jpg");
+  background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1709102674/Top_projects_600_x_400-02_d4itiv.png");
 }
 
 .project-card[for="p2"] {
-  background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1707235973/900356_61340-OA9ERO-509_nldgre.jpg");
+  background-image: url("https://res.cloudinary.com/dltjv8zbh/image/upload/v1709102667/Top_projects_600_x_400-03_azqxcn.png");
 }
 
 .project-card[for="p3"] {
