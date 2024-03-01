@@ -129,6 +129,10 @@
   height: 75vh;
 }
 
+.form-card {
+  width: 100vw;
+}
+
 /* Projects Section */
 .projects-wrapper {
   width: 100%;
@@ -354,6 +358,10 @@ img {
 
   .canvas-three {
     height: 50dvh;
+  }
+
+  .form-card {
+    width: 60vw;
   }
 }
 
