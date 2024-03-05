@@ -30,7 +30,7 @@ const Clients = () => {
             <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
               <img
                 className="client-logo"
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706704176/pngegg_lngzxq.png"
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643618/Logo-01_mfldja.png"
                 alt=""
               />
             </div>
@@ -38,7 +38,7 @@ const Clients = () => {
               <img
                 className="client-logo"
                 width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706718784/safaricom_xqehtv.png"
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643549/Logo-01_tsizpf.png"
                 alt=""
               />
             </div>
@@ -61,8 +61,8 @@ const Clients = () => {
             <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
               <img
                 className="client-logo"
-                width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706718128/catapult_logo_izb8fc.png"
+                width={270}
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709644072/Logo-01_xbupfy.png"
                 alt=""
               />
             </div>
@@ -71,6 +71,30 @@ const Clients = () => {
                 className="client-logo"
                 width={240}
                 src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706718182/Geddo_bjdtn6.png"
+                alt=""
+              />
+            </div>
+            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
+              <img
+                className="client-logo"
+                width={150}
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643512/Logo-01_p76l30.png"
+                alt=""
+              />
+            </div>
+            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
+              <img
+                className="client-logo"
+                width={240}
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643604/Logo-01_nkf4ah.png"
+                alt=""
+              />
+            </div>
+            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
+              <img
+                className="client-logo"
+                width={240}
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643493/Logo-01_w7gr0m.png"
                 alt=""
               />
             </div>

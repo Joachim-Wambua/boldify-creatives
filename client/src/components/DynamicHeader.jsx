@@ -5,7 +5,7 @@ const DynamicHeader = ({ title }) => {
     <>
       <Navbar />
 
-      <section className="background-radial-gradient mb-32 text-center lg:text-left">
+      <section className="background-radial-gradient h-[100vh] mb-32 text-center lg:text-left">
         <div className="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://mdbcdn.b-cdn.net/img/new/standard/nature/071.jpg')] h-[500px]">
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
             <div className="flex h-full items-center justify-center">

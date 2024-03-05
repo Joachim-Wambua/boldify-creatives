@@ -12,6 +12,7 @@ import Projects from "./sections/Projects";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Expertise from "./pages/Expertise";
+import TopProjects from "./sections/TopProjects";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ const Home = () => (
       <About />
       <Services />
       <Team />
-      <Projects />
+      <TopProjects />
       <Clients />
       <Footer />
     </div>

@@ -1,12 +1,14 @@
-import React from "react";
 import DynamicHeader from "../components/DynamicHeader";
 import Footer from "../sections/Footer";
+import ExpertiseContent from "../sections/ExpertiseContent";
 
 const Expertise = () => {
   return (
     <div>
       <DynamicHeader />
-      Expertise
+      <div className="mt-2">
+        <ExpertiseContent />
+      </div>
       <Footer />
     </div>
   );
