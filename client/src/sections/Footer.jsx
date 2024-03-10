@@ -38,7 +38,7 @@ const Footer = () => {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-black transition hover:text-teal-700/75"
+                    className="text-black transition hover:text-gray-600"
                   >
                     <span className="sr-only">Instagram</span>
                     <FaInstagram fontSize={23} />
@@ -50,7 +50,7 @@ const Footer = () => {
                     href="https://www.instagram.com/boldify_creatives/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-black transition hover:text-teal-700/75"
+                    className="text-black transition hover:text-gray-600"
                   >
                     <span className="sr-only">Twitter</span>
                     <FaXTwitter fontSize={23} />
@@ -62,7 +62,7 @@ const Footer = () => {
                     href=""
                     rel="noreferrer"
                     target="_blank"
-                    className="text-black transition hover:text-teal-700/75"
+                    className="text-black transition hover:text-gray-600"
                   >
                     <span className="sr-only">WhatsApp</span>
                     <FaWhatsapp fontSize={23} />
@@ -71,7 +71,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
               <div className="text-center sm:text-left">
                 <p className="text-lg font-medium text-gray-900">About Us</p>
 
@@ -244,7 +244,7 @@ const Footer = () => {
               <p className="text-sm text-gray-500">
                 <span className="block sm:inline">All rights reserved. </span>
 
-                <a
+                {/* <a
                   className="inline-block text-gray-500 underline transition hover:text-black"
                   href="/"
                 >
@@ -258,7 +258,7 @@ const Footer = () => {
                   href="/"
                 >
                   Privacy Policy
-                </a>
+                </a> */}
               </p>
 
               <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">

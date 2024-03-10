@@ -62,7 +62,7 @@ const Clients = () => {
               <img
                 className="client-logo"
                 width={270}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709644072/Logo-01_xbupfy.png"
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709646410/Logo-01_sxuvbj.png"
                 alt=""
               />
             </div>
