@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { clientBrands } from "../constants/data";
+
 
 const Clients = () => {
   return (
@@ -27,77 +29,15 @@ const Clients = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
+            {clientBrands.map((client) => (
+            <div key={client.id} className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
               <img
                 className="client-logo"
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643618/Logo-01_mfldja.png"
+                src={`${client.img}`}
                 alt=""
               />
             </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643549/Logo-01_tsizpf.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={150}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706718143/siha_logo_nqsqrd.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={150}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706717374/Logo-01_ccig6g.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={270}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709646410/Logo-01_sxuvbj.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1706718182/Geddo_bjdtn6.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={150}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643512/Logo-01_p76l30.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643604/Logo-01_nkf4ah.png"
-                alt=""
-              />
-            </div>
-            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
-              <img
-                className="client-logo"
-                width={240}
-                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1709643493/Logo-01_w7gr0m.png"
-                alt=""
-              />
-            </div>
+            ))}
           </div>
         </div>
       </motion.div>
