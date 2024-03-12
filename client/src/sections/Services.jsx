@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { services } from "../constants/data";
 
 const Services = () => {
   return (
@@ -29,77 +30,19 @@ const Services = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
-            <div className="md:p-8 lg:p-14 flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347209/output-onlinegiftools_3_alrrkt.gif"
-                  alt="graphic-design-icon"
-                />
+            {services.map((service) => (
+              <div
+                className="md:p-8 lg:p-14 flex flex-col justify-center items-center"
+                key={service.id}
+              >
+                <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
+                  <img src={`${service.img}`} alt={`${service.name}`} />
+                </div>
+                <h3 className="mt-12 text-xl font-bold text-gray-900">
+                  {service.name}
+                </h3>
               </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Graphic Design
-              </h3>
-            </div>
-
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347206/output-onlinegiftools_2_vi56yg.gif"
-                  alt="branding"
-                />
-              </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Branding & Signages
-              </h3>
-            </div>
-
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708292797/output-onlinegiftools_ttlqko.gif"
-                  alt="printing"
-                />
-              </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Printing
-              </h3>
-            </div>
-
-            <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347204/output-onlinegiftools_1_r1aluo.gif"
-                  alt="web-dev"
-                />
-              </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Web Development
-              </h3>
-            </div>
-
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347210/output-onlinegiftools_4_j8vbpw.gif"
-                  alt="digital-marketing"
-                />
-              </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Digital Marketing
-              </h3>
-            </div>
-
-            <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
-              <div className="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
-                <img
-                  src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347213/output-onlinegiftools_5_crirgp.gif"
-                  alt="data-analytics"
-                />
-              </div>
-              <h3 className="mt-12 text-xl font-bold text-gray-900">
-                Data Analytics
-              </h3>
-            </div>
+            ))}
           </div>
         </motion.div>
       </section>

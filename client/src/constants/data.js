@@ -22,7 +22,7 @@ const teamMembers = [
 
   {
     id: "quincy",
-    name: "Quincy'",
+    name: "Quincy",
     role: "Graphics Designer",
     profileImg:
       "https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
@@ -145,6 +145,48 @@ const clientBrands = [
   },
 ];
 
-const services = [];
+const services = [
+  {
+    id: "branding-and-signages",
+    name: "Branding and Signages",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347206/output-onlinegiftools_2_vi56yg.gif",
+    description: "",
+  },
+
+  {
+    id: "graphic-design",
+    name: "Graphic Design",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347209/output-onlinegiftools_3_alrrkt.gif",
+    description: "",
+  },
+
+  {
+    id: "printing",
+    name: "Printing",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708292797/output-onlinegiftools_ttlqko.gif",
+    description: "",
+  },
+
+  {
+    id: "web-development",
+    name: "Web Development",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347204/output-onlinegiftools_1_r1aluo.gif",
+    description: "",
+  },
+
+  {
+    id: "digital-marketing",
+    name: "Digital Marketing",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347210/output-onlinegiftools_4_j8vbpw.gif",
+    description: "",
+  },
+  {
+    id: "data-analytics",
+    name: "Data Analytics",
+    animatedLogo: "http://",
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1708347213/output-onlinegiftools_5_crirgp.gif",
+    description: "",
+  },
+];
 
 export { teamMembers, topProjects, clientBrands, services };

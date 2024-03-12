@@ -6,9 +6,7 @@ const Expertise = () => {
   return (
     <div>
       <DynamicHeader />
-      <div className="mt-2">
-        <ExpertiseContent />
-      </div>
+      <ExpertiseContent />
       <Footer />
     </div>
   );

@@ -8,11 +8,11 @@ import Team from "./sections/Team";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import Projects from "./sections/Projects";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Expertise from "./pages/Expertise";
 import TopProjects from "./sections/TopProjects";
+import CallToAction from "./sections/CallToAction";
 
 function App() {
   return (
@@ -39,6 +39,7 @@ const Home = () => (
       <Team />
       <TopProjects />
       <Clients />
+      <CallToAction />
       <Footer />
     </div>
   </> 
