@@ -22,12 +22,12 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
-      <div className="header-content flex-1 w-1/2 xs:w-full py-6 px-20">
-          <h1 className="xl:text-8xl text-left font-black lg:t ext-8xl md:text-8xl sm:text-7xl ">
-            Are You
+        <div className="header-content flex-1 w-1/2 xs:w-full py-6 px-20">
+          <h1 className="xl:text-7xl text-left font-black lg:t ext-8xl md:text-8xl sm:text-7xl ">
+            Building <span className="brand-name">Bold</span>
             <br />
-            <span className="brand-name">Bold </span>
-            Enough?
+            Experiences <br />
+            For the <span className="brand-name">Bold!</span>
           </h1>
         </div>
         <div className="header-image flex justify-center xs:w-full items-center w-1/2 ">

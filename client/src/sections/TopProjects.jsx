@@ -3,47 +3,54 @@ import { topProjects } from "../constants/data";
 import Button from "../components/Button";
 
 const TopProjects = () => {
+
+  
   return (
     <>
       <section className="my-20 py-10 bg-gray-900">
         <h2 className="text-4xl font-extrabold mb-20 text-white">
           Top Projects
         </h2>
-        <div className="card-container">
-          {topProjects.map((project) => (
-            <div key={project.id} className="project-card card-1">
-              <div
-                className="card-img"
-                style={{
-                  backgroundImage: `linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0),
-                    rgba(0, 0, 0, 0)
-                  ), url(${project.img})`,
-                }}
-              ></div>
-              <a href="" className="card-link">
-                <div
-                  className="card-img-hovered"
-                  style={{
-                    backgroundImage: `linear-gradient(
-                      to bottom,
-                      rgba(0, 0, 0, 0),
-                      rgba(0, 0, 0, 0)
-                    ),url(${project.img})`,
-                  }}
-                ></div>
-              </a>
-              <div className="card-info">
-                <div className="card-about">
-                  <a className="card-tag tag-news">{project.tag}</a>
-                  {/* <div className="card-time">6/11/2018</div> */}
-                </div>
-                <h1 className="card-title">{project.title}</h1>
-                <div className="card-creator">{/* <Button /> */}</div>
+        <div className="modal">
+          <div className="nav default-color">
+            <div className="next nav-icon">
+              <svg
+                fill="#ececec"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                <path d="M0-.25h24v24H0z" fill="none" />
+              </svg>
+            </div>
+            <div className="prev nav-icon">
+              <svg
+                fill="#ececec"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z" />
+                <path d="M0-.5h24v24H0z" fill="none" />
+              </svg>
+            </div>
+          </div>
+          <div className="modal__body">
+            <div className="circ">
+              <div className="circ3 default-color"></div>
+              <div className="circ2"></div>
+              <div className="circ1 default-color"></div>
+            </div>
+            <div className="content">
+              <div className="tt">
+                <h1 className="content__title"></h1>
+                <p className="content__desc"></p>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </section>
     </>
