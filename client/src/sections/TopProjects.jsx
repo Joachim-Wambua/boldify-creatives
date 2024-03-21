@@ -3,51 +3,123 @@ import { topProjects } from "../constants/data";
 import Button from "../components/Button";
 
 const TopProjects = () => {
-
-  
   return (
     <>
       <section className="my-20 py-10 bg-gray-900">
         <h2 className="text-4xl font-extrabold mb-20 text-white">
           Top Projects
         </h2>
-        <div className="modal">
-          <div className="nav default-color">
-            <div className="next nav-icon">
-              <svg
-                fill="#ececec"
-                height="24"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                <path d="M0-.25h24v24H0z" fill="none" />
-              </svg>
-            </div>
-            <div className="prev nav-icon">
-              <svg
-                fill="#ececec"
-                height="24"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z" />
-                <path d="M0-.5h24v24H0z" fill="none" />
-              </svg>
+
+        <div className="gallery">
+          <div className="gallery__strip__wrapper">
+            <div className="gallery__strip one">
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg" />
+                </div>
+                <div className="photo__name">Kyoto</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg" />
+                </div>
+                <div className="photo__name">Halstatt</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg" />
+                </div>
+                <div className="photo__name">Peru</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg" />
+                </div>
+                <div className="photo__name">Rio</div>
+              </div>
             </div>
           </div>
-          <div className="modal__body">
-            <div className="circ">
-              <div className="circ3 default-color"></div>
-              <div className="circ2"></div>
-              <div className="circ1 default-color"></div>
+          <div className="gallery__strip__wrapper">
+            <div className="gallery__strip two">
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg" />
+                </div>
+                <div className="photo__name">Italy</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg" />
+                </div>
+                <div className="photo__name">Osaka</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg" />
+                </div>
+                <div className="photo__name">Bali</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg" />
+                </div>
+                <div className="photo__name">Paris</div>
+              </div>
             </div>
-            <div className="content">
-              <div className="tt">
-                <h1 className="content__title"></h1>
-                <p className="content__desc"></p>
+          </div>
+          <div className="gallery__strip__wrapper">
+            <div className="gallery__strip three">
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg" />
+                </div>
+                <div className="photo__name">Cusco</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg" />
+                </div>
+                <div className="photo__name">Rome</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg" />
+                </div>
+                <div className="photo__name">Paris</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg" />
+                </div>
+                <div className="photo__name">Bali</div>
+              </div>
+            </div>
+          </div>
+          <div className="gallery__strip__wrapper">
+            <div className="gallery__strip four">
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" />
+                </div>
+                <div className="photo__name">Milan</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" />
+                </div>
+                <div className="photo__name">Budapest</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" />
+                </div>
+                <div className="photo__name">Vienna</div>
+              </div>
+              <div className="photo">
+                <div className="photo__image">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" />
+                </div>
+                <div className="photo__name">Mexico</div>
               </div>
             </div>
           </div>

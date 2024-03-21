@@ -115,7 +115,7 @@
 .brand-name {
   font-family: "Playfair Display", sans-serif;
   letter-spacing: 2.7px;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .about-services {
@@ -145,207 +145,103 @@
 }
 
 /* Top Projects Section */
-.modal {
-  height: 400px;
-  width: 700px;
-  border-radius: 5px;
-  position: relative;
-}
-.modal__body {
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.53);
-  position: relative;
-  overflow: hidden;
-}
-.nav {
-  left: 40px;
-  bottom: -40px;
-  width: 80px;
-  height: 40px;
-  position: absolute;
-  box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.53);
-  transform: translateY(-30px);
-  opacity: 0;
-  animation: nav-animation 0.5s 1s ease forwards;
-  transition: 0.5s;
-}
-.nav .nav-icon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 0;
+.gallery {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+}
+.gallery__strip {
+  min-height: 100vh;
+}
+.gallery__strip__wrapper {
+  flex: 0 0 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+@media (min-width: 500px) {
+  .gallery__strip__wrapper {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 950px) {
+  .gallery {
+    height: 100vh;
+  }
+  .gallery__strip.one {
+    animation: 60s move-it ease alternate infinite 5s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.three {
+    animation: 70s move-it ease alternate infinite 6s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.two {
+    animation: 58s move-it-2 ease alternate infinite 5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip.four {
+    animation: 65s move-it-2 ease alternate infinite 5.5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip:hover {
+    animation-play-state: paused;
+  }
+  .gallery__strip__wrapper {
+    flex: 0 0 25%;
+  }
+}
+.photo {
+  position: relative;
+  text-align: right;
   cursor: pointer;
-  transition: 0.3s;
+  padding-bottom: 3rem;
 }
-.nav .prev {
-  left: 0;
+.photo__image img {
+  width: 90%;
+  transform: translateX(30%);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 }
-.nav .prev:hover {
-  transform: translateX(-2px);
-}
-.nav .next {
-  right: 0;
-}
-.nav .next:hover {
-  transform: translateX(2px);
-}
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
+.photo__name {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-top: -25px;
+  transition: 0.4s ease-in-out 0.4s;
+  position: relative;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
-  padding: 30px 140px 40px 50px;
-  color: #ececec;
-  background: #333;
 }
-.content h1 {
-  padding-top: 20px;
-  font-family: "Caesar Dressing";
-  transform: translateY(-20px);
-  opacity: 0;
-  animation: animate-text-down 1s 0.6s forwards;
-  transition: 0.5s;
+.photo:hover .photo__image img {
+  transform: translateX(0%);
 }
-.content p {
-  font-family: "Open Sans Condensed";
-  font-size: 18px;
-  padding-top: 30px;
-  transform: translateY(-20px);
-  opacity: 0;
-  animation: animate-text-down 1s 0.9s forwards;
-  transition: 0.5s;
+.photo:hover .photo__name {
+  color: #fff;
 }
-.circ {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -150px;
-  right: -150px;
-  z-index: 10;
-  animation: main-circ 6s ease forwards infinite;
-  transition: 0.5s;
-}
-.circ > div {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.5s;
-}
-.circ1 {
-  width: 100px;
-  height: 100px;
-  animation: scale-circ ease 0.6s forwards;
-}
-.circ2 {
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  animation: scale-circ ease 0.6s 0.2s forwards;
-}
-.circ3 {
-  width: 300px;
-  height: 300px;
-  animation: scale-circ ease 0.6s 0.4s forwards;
-}
-.tt {
-  transition: 0.4s;
-}
-body .fade-out .tt {
-  opacity: 0;
-  transform: translateY(-20px);
-}
-body .fade-out .circ {
-  opacity: 0;
-  transform: scale(0.5);
-}
-@-moz-keyframes animate-text-down {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes animate-text-down {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-o-keyframes animate-text-down {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes animate-text-down {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-moz-keyframes scale-circ {
-  80% {
-    transform: scale(1.2);
-  }
+
+@keyframes move-it {
+  0%,
+  90%,
   100% {
-    transform: scale(1);
+    transform: translateY(2%);
+  }
+  45% {
+    transform: translateY(-50%);
   }
 }
-@-webkit-keyframes scale-circ {
-  80% {
-    transform: scale(1.2);
-  }
+@keyframes move-it-2 {
+  0%,
+  90%,
   100% {
-    transform: scale(1);
+    transform: translateY(-50%);
   }
-}
-@-o-keyframes scale-circ {
-  80% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes scale-circ {
-  80% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-moz-keyframes nav-animation {
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes nav-animation {
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@-o-keyframes nav-animation {
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@keyframes nav-animation {
-  to {
-    transform: none;
-    opacity: 1;
+  45% {
+    transform: translateY(5%);
   }
 }
 

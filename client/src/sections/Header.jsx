@@ -22,8 +22,8 @@ const Header = () => {
         }}
         viewport={{ once: true }}
       >
-        <div className="header-content flex-1 w-1/2 xs:w-full py-6 px-20">
-          <h1 className="xl:text-7xl text-left font-black lg:t ext-8xl md:text-8xl sm:text-7xl ">
+        <div className="header-content flex-1 w-1/2 xs:w-full lg:px-32 py-6">
+          <h1 className="xl:text-7xl text-left font-black lg:text-8xl md:text-8xl sm:text-7xl ">
             Building <span className="brand-name">Bold</span>
             <br />
             Experiences <br />
