@@ -18,12 +18,6 @@ const PortfolioContent = () => {
                 </a>
               </div>
               <div className="card-meta">
-                <div className="card-top">
-                  <a href="#" className="cat">
-                    Project 1
-                  </a>
-                  <span className="date">3 days ago</span>
-                </div>
                 <h2 className="card-title">
                   <a href="#"> {project.title}</a>
                 </h2>
