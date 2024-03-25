@@ -11,6 +11,7 @@ import "./App.css";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Expertise from "./pages/Expertise";
+import Portfolio from "./pages/Portfolio";
 import TopProjects from "./sections/TopProjects";
 import CallToAction from "./sections/CallToAction";
 
@@ -22,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/expertise" element={<Expertise />} />
-          {/* <Route path="/clients" element={<Clients />} /> */}
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>

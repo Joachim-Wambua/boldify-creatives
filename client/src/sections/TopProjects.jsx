@@ -6,9 +6,7 @@ const TopProjects = () => {
   return (
     <>
       <section className="my-20 py-10 bg-gray-900">
-        <h2 className="text-4xl font-extrabold mb-20 text-white">
-          Top Projects
-        </h2>
+        <h2 className="text-4xl font-extrabold mb-20 text-white">Our Work</h2>
 
         <div className="gallery">
           <div className="gallery__strip__wrapper">
