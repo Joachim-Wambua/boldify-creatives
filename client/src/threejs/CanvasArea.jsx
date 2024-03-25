@@ -7,7 +7,7 @@ import * as THREE from "three";
 import { degToRad } from "three/src/math/MathUtils";
 
 const Scene = () => {
-  const gltf = useLoader(GLTFLoader, "/model/scene.gltf");
+  const gltf = useLoader(GLTFLoader, "/boldify.gltf");
 
   // Apply glossy metallic material to the model
   // gltf.scene.traverse((child) => {
@@ -20,8 +20,8 @@ const Scene = () => {
   //   }
   // });
 
-  gltf.scene.scale.set(3, 3, 3);
-  gltf.scene.position.set(0, -3, 0);
+  gltf.scene.scale.set(30, 30, 30);
+  gltf.scene.position.set(0, 0, 0);
   gltf.scene.rotation.y = degToRad(120);
   return <primitive object={gltf.scene} />;
 };
@@ -41,10 +41,7 @@ const CanvasArea = () => {
           far={9}
         />
         <Environment blur={2} preset="sunset" />
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-        />
+        <OrbitControls enableZoom={false} autoRotate enablePan={false} />
       </Canvas>
     </div>
   );
