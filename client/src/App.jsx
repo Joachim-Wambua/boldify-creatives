@@ -14,6 +14,7 @@ import Expertise from "./pages/Expertise";
 import Portfolio from "./pages/Portfolio";
 import TopProjects from "./sections/TopProjects";
 import CallToAction from "./sections/CallToAction";
+import SingleProject from "./pages/SingleProject";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/project" element={<SingleProject />} />
         </Routes>
       </Router>
     </>
@@ -43,7 +45,7 @@ const Home = () => (
       <CallToAction />
       <Footer />
     </div>
-  </> 
+  </>
 );
 
 export default App;
