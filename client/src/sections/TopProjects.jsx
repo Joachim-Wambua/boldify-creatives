@@ -1,7 +1,3 @@
-import { useState } from "react";
-import { topProjects } from "../constants/data";
-import Button from "../components/Button";
-
 const TopProjects = () => {
   return (
     <>
@@ -13,27 +9,23 @@ const TopProjects = () => {
             <div className="gallery__strip one">
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-kyoto.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711985021/top-01_z6qi6t.jpg" />
                 </div>
-                <div className="photo__name">Kyoto</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-austria.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711985017/top-03_xcyw5u.jpg" />
                 </div>
-                <div className="photo__name">Halstatt</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-peru.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984998/top-12_uumdn7.jpg" />
                 </div>
-                <div className="photo__name">Peru</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rio.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984996/top-09_bjrjlw.jpg" />
                 </div>
-                <div className="photo__name">Rio</div>
               </div>
             </div>
           </div>
@@ -41,27 +33,23 @@ const TopProjects = () => {
             <div className="gallery__strip two">
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-italy.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984994/top-02_tvmfnd.jpg" />
                 </div>
-                <div className="photo__name">Italy</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-osaka.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984994/top-11_t72ncj.jpg" />
                 </div>
-                <div className="photo__name">Osaka</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984993/top-10_cuvgm1.jpg" />
                 </div>
-                <div className="photo__name">Bali</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris2.jpg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984988/top-15_onn0jj.jpg" />
                 </div>
-                <div className="photo__name">Paris</div>
               </div>
             </div>
           </div>
@@ -69,27 +57,23 @@ const TopProjects = () => {
             <div className="gallery__strip three">
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-cusco.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984988/top-08_lgkm7p.jpg" />
                 </div>
-                <div className="photo__name">Cusco</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-rome.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984984/top-07_lmlz7w.jpg" />
                 </div>
-                <div className="photo__name">Rome</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-paris.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984985/top-16_fbgaea.jpg" />
                 </div>
-                <div className="photo__name">Paris</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-bali2.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984983/top-06_kexbm2.jpg" />
                 </div>
-                <div className="photo__name">Bali</div>
               </div>
             </div>
           </div>
@@ -97,27 +81,23 @@ const TopProjects = () => {
             <div className="gallery__strip four">
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984981/top-14_gvwioi.jpg" />
                 </div>
-                <div className="photo__name">Milan</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984980/top-04_ayjnk5.jpg" />
                 </div>
-                <div className="photo__name">Budapest</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984980/top-13_dany6w.jpg" />
                 </div>
-                <div className="photo__name">Vienna</div>
               </div>
               <div className="photo">
                 <div className="photo__image">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" />
+                  <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984979/top-05_abpvco.jpg" />
                 </div>
-                <div className="photo__name">Mexico</div>
               </div>
             </div>
           </div>
