@@ -10,17 +10,17 @@ const Scene = () => {
   const gltf = useLoader(GLTFLoader, "/boldify.gltf");
 
   // Apply glossy metallic material to the model
-  // gltf.scene.traverse((child) => {
-  //   if (child.isMesh) {
-  //     child.material = new THREE.MeshStandardMaterial({
-  //       color: 0x000035, // color
-  //       metalness: 0.8, // 100% metallic
-  //       roughness: 0, // Slightly rough surface
-  //     });
-  //   }
-  // });
+  gltf.scene.traverse((child) => {
+    if (child.isMesh) {
+      child.material = new THREE.MeshStandardMaterial({
+        color: 0x000035, // color
+        metalness: 0.8, // 100% metallic
+        roughness: 0, // Slightly rough surface
+      });
+    }
+  });
 
-  gltf.scene.scale.set(30, 30, 30);
+  gltf.scene.scale.set(0.01, 0.01, 0.01);
   gltf.scene.position.set(0, 0, 0);
   gltf.scene.rotation.y = degToRad(120);
   return <primitive object={gltf.scene} />;
@@ -29,7 +29,7 @@ const Scene = () => {
 const CanvasArea = () => {
   return (
     <div className="canvas-three flex justify-center items-center">
-      <Canvas camera={{ position: [6, 3, 1] }}>
+      <Canvas camera={{ position: [1, 1, 1] }}>
         <ambientLight color={0xf44336} intensity={1.5} />
 
         <Scene />

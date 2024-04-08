@@ -189,4 +189,86 @@ const services = [
   },
 ];
 
-export { teamMembers, topProjects, clientBrands, services };
+const projectImages = [
+  {
+    id: 1,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711985021/top-01_z6qi6t.jpg",
+  },
+
+  {
+    id: 2,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711985017/top-03_xcyw5u.jpg",
+  },
+
+  {
+    id: 3,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984998/top-12_uumdn7.jpg",
+  },
+
+  {
+    id: 4,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984996/top-09_bjrjlw.jpg",
+  },
+
+  {
+    id: 5,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984994/top-11_t72ncj.jpg",
+  },
+
+  {
+    id: 6,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984993/top-10_cuvgm1.jpg",
+  },
+
+  {
+    id: 7,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984994/top-02_tvmfnd.jpg",
+  },
+
+  {
+    id: 8,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984988/top-15_onn0jj.jpg",
+  },
+
+  {
+    id: 9,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984988/top-08_lgkm7p.jpg",
+  },
+
+  {
+    id: 10,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984984/top-07_lmlz7w.jpg",
+  },
+
+  {
+    id: 11,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984983/top-06_kexbm2.jpg",
+  },
+
+  {
+    id: 12,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984985/top-16_fbgaea.jpg",
+  },
+
+  {
+    id: 13,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984981/top-14_gvwioi.jpg",
+  },
+
+  {
+    id: 14,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984980/top-04_ayjnk5.jpg",
+  },
+
+  {
+    id: 15,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984980/top-13_dany6w.jpg",
+  },
+
+  {
+    id: 16,
+    img: "https://res.cloudinary.com/dltjv8zbh/image/upload/v1711984979/top-05_abpvco.jpg",
+  },
+];
+
+export { teamMembers, projectImages, topProjects, clientBrands, services };
