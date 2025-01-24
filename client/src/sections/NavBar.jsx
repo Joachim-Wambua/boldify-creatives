@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed shadow bg-white sm:px-8 px-4 py-8 z-10 w-full">
+      <header className="fixed shadow bg-white sm:px-8 px-4 py-6 z-20 w-full">
         <motion.nav
           className="flex justify-between items-center max-container"
           initial={{

@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <>
-      <section className="bg-gray-900 dark:bg-gray-900 w-full">
+      <section className="bg-white w-full ">
         <motion.div
           className="about-section flex w-full justify-center "
           initial={{
@@ -30,38 +30,42 @@ const About = () => {
           }}
           viewport={{ once: true }}
         >
-          <div className="about-content flex min-h-screen items-center w-1/2 justify-center font-bold text-white">
-            <div className=" text-left mx-12 space-y-12">
+          <div className="about-content flex min-h-screen items-center w-1/2 justify-center font-bold text-black">
+            <div className=" text-left mx-12 space-y-8">
               <div className="text-4xl text-left font-bold">
-                We offer: <br />
+                We Offer: <br />
                 <div className="about-services relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
                   <span className="animate-word col-span-full row-span-full">
-                    Graphic Design
+                    Printing
                   </span>
                   <span className="animate-word-delay-1 col-span-full row-span-full">
-                    Branding & Signages
+                    Branding
                   </span>
                   <span className="animate-word-delay-2 col-span-full row-span-full">
-                    Printing
+                    Signages
                   </span>
                   <span className="animate-word-delay-3 col-span-full row-span-full">
                     Web Development
-                  </span>
-                  <span className="animate-word-delay-4 col-span-full row-span-full">
-                    Digital Marketing
                   </span>
                 </div>
               </div>
 
               <div>
-                <p className="font-light leading-7 text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                  quam consequatur deserunt sint ipsum saepe hic, perferendis
-                  dolore, odit quos laudantium, repudiandae assumenda beatae
-                  molestiae voluptatum quo accusamus doloremque accusantium! Ad
-                  repellat consequatur reiciendis commodi repudiandae fugit eius
-                  provident labore numquam perspiciatis, optio amet accusantium
-                  sequi ipsam maxime nulla velit unde! Accusantium earum.
+                <p className="font-normal leading-7 text-justify">
+                  At Boldify Creatives, we redefine visual communication. From
+                  captivating signage to stunning Graphic Design to precise
+                  printing and cutting - edge Web Development, we transform
+                  ideas to impactful realities.
+                </p>
+                <br />
+
+                <p className="font-normal leading-7 text-justify">
+                  Our passion lies in crafting immersive experiences that
+                  resonate with your audience, elevating brands to new heights.
+                  With a blend of creativity and technical expertise, we bring
+                  your vision to life, ensuring every detail reflects your
+                  unique identity. Experience the difference with Boldify
+                  Creatives - where creativity knows no bounds.
                 </p>
               </div>
             </div>

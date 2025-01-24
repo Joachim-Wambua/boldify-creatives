@@ -15,6 +15,7 @@ import Portfolio from "./pages/Portfolio";
 import TopProjects from "./sections/TopProjects";
 import CallToAction from "./sections/CallToAction";
 import SingleProject from "./pages/SingleProject";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
@@ -36,11 +37,12 @@ function App() {
 const Home = () => (
   <>
     <div className="flex flex-col justify-start">
-      <Header />
+      {/* <Header /> */}
+      <HeroSection />
       <About />
+      <TopProjects />
       <Services />
       <Team />
-      <TopProjects />
       <Clients />
       <CallToAction />
       <Footer />
