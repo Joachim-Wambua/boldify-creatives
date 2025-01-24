@@ -16,6 +16,7 @@ import TopProjects from "./sections/TopProjects";
 import CallToAction from "./sections/CallToAction";
 import SingleProject from "./pages/SingleProject";
 import HeroSection from "./sections/HeroSection";
+import WhatsAppButton from "./sections/WhatsAppButton";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ const Home = () => (
       <Clients />
       <CallToAction />
       <Footer />
+      <WhatsAppButton />
     </div>
   </>
 );
