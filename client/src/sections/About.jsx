@@ -52,20 +52,13 @@ const About = () => {
 
               <div>
                 <p className="font-normal leading-7 text-justify">
-                  At Boldify Creatives, we redefine visual communication. From
-                  captivating signage to stunning Graphic Design to precise
-                  printing and cutting - edge Web Development, we transform
-                  ideas to impactful realities.
-                </p>
-                <br />
-
-                <p className="font-normal leading-7 text-justify">
-                  Our passion lies in crafting immersive experiences that
-                  resonate with your audience, elevating brands to new heights.
-                  With a blend of creativity and technical expertise, we bring
-                  your vision to life, ensuring every detail reflects your
-                  unique identity. Experience the difference with Boldify
-                  Creatives - where creativity knows no bounds.
+                  At Boldify Creatives, we are the architects of exceptional
+                  visual communication. From eye-catching signage to inspiring
+                  graphic design, precise printing, and innovative web
+                  development, we bring ideas to life with creativity and
+                  precision. With every project, we don't just create; we craft
+                  experiences that leave lasting impressions. Boldify
+                  Creatives—where vision meets impact.
                 </p>
               </div>
             </div>
