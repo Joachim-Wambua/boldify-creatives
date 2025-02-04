@@ -35,7 +35,7 @@ const Services = () => {
                 className="md:p-8 lg:p-14 flex flex-col justify-center items-center"
                 key={service.id}
               >
-                <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
+                <div className="w-14 h-14 rounded-full  flex justify-center items-center">
                   <img src={`${service.img}`} alt={`${service.name}`} />
                 </div>
                 <h3 className="mt-12 text-xl font-bold text-gray-900">

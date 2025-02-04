@@ -17,6 +17,7 @@ import CallToAction from "./sections/CallToAction";
 import SingleProject from "./pages/SingleProject";
 import HeroSection from "./sections/HeroSection";
 import WhatsAppButton from "./sections/WhatsAppButton";
+import HeaderCarousel from "./sections/HeaderCarousel";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ const Home = () => (
   <>
     <div className="flex flex-col justify-start">
       {/* <Header /> */}
+      {/* <HeaderCarousel /> */}
       <HeroSection />
       <About />
       <TopProjects />
